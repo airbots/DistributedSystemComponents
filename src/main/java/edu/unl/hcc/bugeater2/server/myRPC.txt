@@ -1,0 +1,11 @@
+option java_package = "edu.unl.hcc.bugeater2.server";
+option java_outer_classname = "Server";
+
+message Task {
+  required string id = 1
+  repeated string inputLocation = 2
+}
+
+message Job {
+  repeated Task tasks = 1
+}

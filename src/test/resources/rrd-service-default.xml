@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+    <property>
+        <name>rrd.concurrency</name>
+        <value>1000000</value>
+        <description>Concurrency threads for updating rrd file</description>
+    </property>
+
+    <property>
+        <name>rrd.update.period</name>
+        <value>15</value>
+        <description>The interval that RrdService update rrd file, in second</description>
+    </property>
+
+    <property>
+        <name>rrd.stop.timeout</name>
+        <value>60</value>
+        <description>The timeout for stop RrdService, in second</description>
+    </property>
+
+    <property>
+        <name>rrd.home</name>
+        <value>/tmp/localhost/rrd</value>
+        <description>The timeout for stop RrdService, in second, default is /u01/app/oracle/tools/oehp/rrd</description>
+    </property>
+
+</configuration>
