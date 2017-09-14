@@ -271,17 +271,18 @@ public class RrdUtils {
         System.out.println("update is: " + update);
         long currentTime = System.currentTimeMillis();
         createRrdFile("/tmp/localhost", Metric_Type.METRIC_TPYE_BYTE_IN);
-        int i = 1000000;
-
+        int i = 1;
+        System.out.println(System.currentTimeMillis());
         while(i>0){
-            executor.submit(new RrdTask(RrdService.TASK_TYPE.UPDATE_TASK,
+            executor.submit(new RrdTask(RrdService.TASK_TYPE.FETCH_TASK,
                     RrdUtils.Metric_Type.METRIC_TPYE_BYTE_IN,
-                    System.currentTimeMillis(),
+                    (System.currentTimeMillis()-15000)/1000,
+                    System.currentTimeMillis()/1000,
                     update,
                     "/tmp/localhost/rrd"));
             i--;
         }
-
+        System.out.println(System.currentTimeMillis());
         System.out.println("Time to do 1M updates: " + (System.currentTimeMillis() - currentTime) / 1000);
         //updateRrd("/tmp/localhost", Metric_Type.METRIC_TPYE_BYTE_IN, update);
         Thread.sleep(30);
