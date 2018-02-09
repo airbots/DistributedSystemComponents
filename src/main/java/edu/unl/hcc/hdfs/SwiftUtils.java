@@ -1,12 +1,4 @@
-/**
- * Copyright (c) 2016 Oracle Corporation. All Rights Reserved. Title, ownership
- * rights, and intellectual property rights in and to this software remain with
- * Oracle Corporation. This software is protected by international copyright
- * laws and treaties, and may be protected by other law. Violation of copyright
- * laws may result in civil liability and criminal penalties.
- *
- * Created by chen.he@oracle.com.
- */
+
 
 package edu.unl.hcc.hdfs;
 
