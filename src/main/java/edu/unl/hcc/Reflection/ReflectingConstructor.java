@@ -15,7 +15,7 @@ public class ReflectingConstructor {
 			InvocationTargetException, IllegalAccessException, InstantiationException {
 
 
-		Constructor<?> constructor = Class.forName("ed..unl.hcc.Reflection.ReflectingConstructor")
+		Constructor<?> constructor = Class.forName("edu.unl.hcc.Reflection.ReflectingConstructor")
 				.getConstructor(int.class);
 //getting constructor parameters
 		System.out.println(Arrays.toString(constructor.getParameterTypes())); // prints "[int]"

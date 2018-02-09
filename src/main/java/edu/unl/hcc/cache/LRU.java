@@ -25,7 +25,7 @@ public class LRU<T> {
 	}
 
 	public T get(){
-
+        return null;
 	}
 
 	private void setHead(Node n){}

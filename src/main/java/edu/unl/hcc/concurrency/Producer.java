@@ -1,8 +1,11 @@
+/*
 package edu.unl.hcc.concurrency;
 
+*/
 /**
  * Created by chehe on 2017/9/8.
- */
+ *//*
+
 public class Producer {
 	BlockingQueueMT queue;
 	int capacity;
@@ -29,3 +32,4 @@ public class Producer {
 		}
 	}
 }
+*/

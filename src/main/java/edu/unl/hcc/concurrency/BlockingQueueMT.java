@@ -7,6 +7,8 @@ import java.util.concurrent.locks.Condition;
 /**
  * Created by chehe on 2017/9/8.
  */
+
+/*
 public class BlockingQueueMT<E> {
 
 	int capacity;
@@ -71,3 +73,6 @@ public class BlockingQueueMT<E> {
 
 	}
 }
+
+
+*/
