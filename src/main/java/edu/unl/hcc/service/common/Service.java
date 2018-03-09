@@ -1,7 +1,6 @@
 package edu.unl.hcc.service.common;
 
-import com.google.common.annotations.VisibleForTesting;
-import edu.unl.hcc.service.event.LifecycleEvent;
+import edu.unl.hcc.service.event.LifeCycleEvent;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -135,8 +134,8 @@ public abstract class Service {
     /**
      * History of lifecycle transitions
      */
-    protected final List<LifecycleEvent> lifecycleHistory
-            = new ArrayList<LifecycleEvent>(5);
+    protected final List<LifeCycleEvent> lifecycleHistory
+            = new ArrayList<LifeCycleEvent>(5);
 
     /**
      * Map of blocking dependencies
@@ -426,15 +425,15 @@ public abstract class Service {
      * Add a state change event to the lifecycle history
      */
     protected void recordLifecycleEvent() {
-        LifecycleEvent event = new LifecycleEvent();
+        LifeCycleEvent event = new LifeCycleEvent();
         event.time = System.currentTimeMillis();
         event.state = getServiceState();
         lifecycleHistory.add(event);
     }
 
     
-    public synchronized List<LifecycleEvent> getLifecycleHistory() {
-        return new ArrayList<LifecycleEvent>(lifecycleHistory);
+    public synchronized List<LifeCycleEvent> getLifecycleHistory() {
+        return new ArrayList<LifeCycleEvent>(lifecycleHistory);
     }
 
     /**

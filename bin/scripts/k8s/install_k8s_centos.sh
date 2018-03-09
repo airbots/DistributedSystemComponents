@@ -2,7 +2,6 @@
 
 
 hostnamectl set-hostname $1
-exec bash
 setenforce 0
 sed -i --follow-symlinks 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux
 echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
@@ -33,6 +32,9 @@ yum install kubeadm docker -y
 #remaining config
 systemctl restart docker && systemctl enable docker
 systemctl  restart kubelet && systemctl enable kubelet
+
+#turn off swap
+swapoff -a
 
 #for k8s master
 kubeadm init

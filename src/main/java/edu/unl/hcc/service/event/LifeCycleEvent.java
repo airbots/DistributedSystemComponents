@@ -13,7 +13,7 @@ import java.io.Serializable;
  * transition occurred, and what state was entered.
  */
 
-public class LifecycleEvent implements Serializable {
+public class LifeCycleEvent implements Serializable {
 
     private static final long serialVersionUID = 1648576996238247836L;
 
