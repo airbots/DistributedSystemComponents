@@ -157,8 +157,8 @@ public class Configuration implements Iterable<Map.Entry<String,String>>
         if (cL == null) {
             cL = Configuration.class.getClassLoader();
         }
-        addDefaultResource("rrd-service-default.xml");
-        addDefaultResource("rrd-service-site.xml");
+        addDefaultResource("keystore-service-default.xml");
+        addDefaultResource("keystore-service-site.xml");
     }
 
     private Properties properties;
@@ -208,7 +208,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>
                 this.overlay = (Properties)other.overlay.clone();
             }
 
-            this.updatingResource = new ConcurrentHashMap<String, String[]>(
+            this.updatingResource = new ConcurrentHashMap<>(
                     other.updatingResource);
             this.finalParameters = Collections.newSetFromMap(
                     new ConcurrentHashMap<String, Boolean>());

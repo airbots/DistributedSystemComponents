@@ -3,17 +3,11 @@ package edu.unl.hcc.leetcode;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
- }
 
  //Pre order traverse is easy since we can do the same thing when we deserilize it.
 //but can not use index for array since integer is value pass not object pass, using a list is a good choice
 
-class A297 {
+public class A297_pre {
         StringBuilder sb = new StringBuilder();
 
         // Encodes a tree to a single string.
