@@ -1,4 +1,4 @@
-package edu.unl.hcc.concurrency;
+package edu.unl.hcc.system.concurrency;
 
 import java.util.Scanner;
 

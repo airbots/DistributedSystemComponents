@@ -1,4 +1,4 @@
-package edu.unl.hcc.concurrency;
+package edu.unl.hcc.system.concurrency;
 
 /**
  * Created by chehe on 2017/9/8.

@@ -1,11 +1,9 @@
-package edu.unl.hcc.concurrency.callback;
+package edu.unl.hcc.system.concurrency.callback;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
 public class TestSimpleCallback {

@@ -2,9 +2,9 @@ package edu.unl.hcc.leetcode;
 
 public class A61_RotateList {
 
-    public Node rotateRight(Node head, int k) {
+    public ListNode rotateRight(ListNode head, int k) {
         if(head == null || head.next==null || k<1) return head;
-        Node fast=head;
+        ListNode fast=head;
         ListNode slow=head;
 
         int l=1;

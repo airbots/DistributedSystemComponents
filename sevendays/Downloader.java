@@ -1,5 +1,5 @@
 /*
-package edu.unl.hcc.concurrency.sevendays;
+package edu.unl.hcc.system.interview.concurrency.sevendays;
 
 
 import java.io.FileOutputStream;

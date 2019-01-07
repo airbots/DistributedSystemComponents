@@ -1,8 +1,4 @@
-package edu.unl.hcc.concurrency;
-
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+package edu.unl.hcc.system.concurrency;
 
 /**
  * Created by chehe on 2017/9/8.

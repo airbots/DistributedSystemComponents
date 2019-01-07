@@ -1,6 +1,6 @@
 
 /*
-package edu.unl.hcc.concurrency;
+package edu.unl.hcc.system.interview.concurrency;
 
 import java.util.ArrayList;
 import java.util.Random;

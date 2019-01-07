@@ -3,6 +3,7 @@ package edu.unl.hcc.basic.data_structure;
 import java.util.Scanner;
 
 public class Heap {
+    /*
     static int[] arr;//堆数组，有效数组
     public Heap(int m){
         arr= new int[m];
@@ -53,8 +54,8 @@ public class Heap {
             *若数组中最后一个为奇数则为 左孩子
             *若数组中最后一个为偶数则为 右孩子
                          若孩子节点比父节点的值大，则进行值交换，若右孩子比左孩子大则进行值交换
-         *
-         */
+
+
         int par;
         if(index!=0){
             if(index%2==0){
@@ -91,9 +92,9 @@ public class Heap {
 
     }
     public  void add_sort1(int index){//调整小顶堆
-        /*调整自顶向下
+        调整自顶向下
          * 只要孩子节点比父节点的值大，就进行值交换，
-         */
+
         int left=index*2;
         int right=index*2+1;
         int max=0;
@@ -111,9 +112,10 @@ public class Heap {
         }
     }
 
+    */
 }
-
-测试代码：
+/*
+//测试代码：
         package 大顶堆;
 
         import java.util.Scanner;
@@ -135,3 +137,4 @@ public class Main_test0 {
         scan.close();
     }
 }
+*/
